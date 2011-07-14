@@ -1,0 +1,28 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+	</ui:style>
+	<g:HTMLPanel width="800">
+		<h1>OnTheList.com</h1>
+		<span>Hello, <g:Label ui:field="testLabel"></g:Label></span>
+		<g:Button styleName="{style.important}" ui:field="testButton" text="Click here" width="200px" />
+		
+		<g:HorizontalPanel width="800px" horizontalAlignment="ALIGN_CENTER">
+			<g:VerticalPanel horizontalAlignment="ALIGN_RIGHT">
+				<g:HorizontalPanel>
+					<g:Label>Login:</g:Label>
+					<g:TextBox></g:TextBox>
+				</g:HorizontalPanel>
+				<g:HorizontalPanel>
+					<g:Label>Password:</g:Label>
+					<g:PasswordTextBox></g:PasswordTextBox>
+				</g:HorizontalPanel>
+				
+			</g:VerticalPanel>
+		</g:HorizontalPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 
